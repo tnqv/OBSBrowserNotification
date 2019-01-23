@@ -19,7 +19,7 @@
           .stop()
           .show();
 
-          $("#donate-info p").text(text);
+          $("#donate-info div").text(text);
       }
 
       function hideDiv() {
@@ -35,7 +35,7 @@
           <div class='display' style='display:none;'>
               <Img SRC="https://media.giphy.com/media/l4Jz3a8jO92crUlWM/giphy.gif"></Img>
               <div id='donate-info'>
-                  <p> ABC </p>
+                  <div class="strokeme"> ABC </div>
               </div>
           </div>
       </div>
@@ -51,6 +51,28 @@
       #messages li { padding: 5px 10px; }
       #messages li:nth-child(odd) { background: #eee; }
       .js .display { display:none; }
+        .strokeme {
 
+            color: white;
+            text-shadow:
+            -1px -1px 0 red,
+            1px -1px 0 red,
+            -1px 1px 0 red,
+            1px 1px 0 red;
+        }
+        #container{
+            width: 400px;
+            height: 600px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+
+            max-width: 100%;
+            max-height: 100%;
+            overflow:auto;
+        }
     </style>
 </html>
